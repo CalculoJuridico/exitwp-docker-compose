@@ -27,6 +27,16 @@ Getting started
 * Run the converter by typing ``python exitwp.py`` in the console from the directory of the unzipped archive
 * You should now have all the blogs converted into separate directories under the ``build`` directory
 
+
+## With docker-compose
+
+```
+docker compose run --rm fetcher python exitwp.py
+```
+
+That's it, check the result inside /build folder
+
+
 Runtime dependencies
 ====================
 * `Python <http://python.org/>`_ 3.9.7 (it could work also with previous minor versions but I never tested it)
