@@ -1,0 +1,11 @@
+version: '3'
+services:
+  fetcher:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./build:/app/build
+      - ./wordpress-xml:/app/wordpress-xml
+      - /dev/shm:/dev/shm
+      - /tmp
